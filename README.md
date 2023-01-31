@@ -1,4 +1,4 @@
-https://youcefKNL.github.io/OC_Projet2_Booki
+https://youcefKNL.github.io/OC_Projet2_Booki/
 
 
 
