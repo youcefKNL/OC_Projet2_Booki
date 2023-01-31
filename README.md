@@ -1,7 +1,6 @@
-https://youcefKNL.github.io/OC_Projet2_Booki/
+[![GitHub](https://badgen.net/badge/icon/github?icon=github&label)](https://github.com)
 
-
-https://youcefKNL.github.io/youcefKNL-OC_Projet2_Booki/
+[![GitHub](https://badgen.net/badge/icon/github?icon=github&label)](https://github.com) https://youcefKNL.github.io/youcefKNL-OC_Projet2_Booki/
 
 
 
