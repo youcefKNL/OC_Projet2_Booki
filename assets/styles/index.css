@@ -591,4 +591,46 @@ footer {
   #filter-containers div:last-child {
     grid-area: ani;
   }
+
+  .top {
+    flex-direction: column-reverse;
+  }
+  #search-result {
+    background: none;
+    width: 100%;
+    border-radius: 0;
+  }
+  .popular-result {
+    width: 100%;
+    border-radius: 0;
+  }
+  .search-result-containers {
+    flex-direction: column;
+  }
+  .results-flex {
+    flex-direction: column;
+    align-items: center;
+  }
+  .card-results {
+    width: 100%;
+  }
+  #search-result a {
+    display: none;
+  }
+  .bottom-containers {
+    flex-direction: column;
+  }
+  .bottom-containers-alone {
+    width: auto;
+    height: 20vh;
+    margin: 15px;
+  }
+  footer {
+    flex-direction: column;
+    padding: 40px 30px;
+    margin-top: 50px;
+  }
+  .footer {
+    padding-bottom: 20px;
+  }
 }
