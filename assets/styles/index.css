@@ -30,7 +30,9 @@ a {
 a:visited {
   color: inherit;
 }
-/* *******************************NavBar*************************** */
+
+/* ******************************SECTION TOP************************** */
+/* NavBar*************************** */
 
 nav {
   display: flex;
@@ -77,7 +79,7 @@ nav ul li a:hover {
   color: var(--primary-color);
 }
 
-/* **************************SearchBar**************************** */
+/* SearchBar**************************** */
 
 .header-containers {
   margin: 0 30px;
@@ -153,7 +155,7 @@ nav ul li a:hover {
 #buttonSearch i {
   display: none;
 }
-/* **************************Filter**************************** */
+/* Filter**************************** */
 #filter-containers {
   display: flex;
   align-items: center;
@@ -171,10 +173,10 @@ nav ul li a:hover {
   display: flex;
   align-items: center;
   justify-content: center;
-
   border: 2px solid var(--border-line);
   border-radius: 25px;
   width: 15%;
+  transition: 0.3s ease;
 }
 
 .filter i {
@@ -189,7 +191,7 @@ nav ul li a:hover {
 .filter:hover {
   background-color: var(--secondary-color);
   cursor: pointer;
-  scale: 1.05;
+  transform: scale(1.05);
 }
 
 .filter p {
@@ -198,7 +200,7 @@ nav ul li a:hover {
 }
 
 /* ******************************SECTION TOP************************** */
-/* 1er Bloc -GAUCHE-de la section */
+/* 1er Bloc Gauche**************************** */
 .top {
   display: flex;
   justify-content: space-between;
@@ -268,7 +270,7 @@ nav ul li a:hover {
   color: var(--font-color);
 }
 
-/* ***************************2e Bloc -GAUCHE-de la section********************************** */
+/* 2e Bloc -Droit********************************** */
 
 .popular-result {
   background-color: var(--font-color);
@@ -378,9 +380,11 @@ footer {
 }
 
 /* *************************************************************************************** */
-/* ************************ANIMATION PAGE********************************** */
+/* ************************************ANIMATION PAGE************************************* */
+/* *************************************************************************************** */
 
-/* *****************Animation sur le hover*********************/
+/* Animation Section1*********************/
+
 @keyframes animation1 {
   0% {
     transform: scale(1);
@@ -397,7 +401,8 @@ footer {
   animation: animation1 1s ease 0s infinite normal none;
 }
 
-/* *********************ANIMATION BOTTOM *********************/
+/* ANIMATION Section2 *********************/
+
 @keyframes animation2 {
   0%,
   100% {
@@ -483,7 +488,6 @@ footer {
 /* ****************************BREAK POINT*************************** */
 @media screen and (max-width: 768px) {
 
-
   nav,
   .header-containers,
   #search-result,
@@ -493,6 +497,8 @@ footer {
     margin: 0 0;
     /* width: 100%; */
   }
+
+  /* **********header */
   nav a,
   .header-containers,
   p {
@@ -532,6 +538,8 @@ footer {
     width: 100%;
   }
 
+   /* **********Formulaire */
+
   #buttonSearch {
     width: 15%;
     display: flex;
@@ -551,6 +559,7 @@ footer {
     color: white;
     transform: translateX(-80%);
   }
+   /* **********Filtre */
 
   #filter-containers {
     height: 25vh;
@@ -586,6 +595,7 @@ footer {
     grid-area: ani;
   }
 
+   /* **********Main */
   .top {
     flex-direction: column-reverse;
   }
@@ -619,6 +629,9 @@ footer {
     height: 20vh;
     margin: 15px;
   }
+  
+   /* **********footer */
+
   footer {
     flex-direction: column;
     padding: 40px 30px;
