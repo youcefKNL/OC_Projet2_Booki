@@ -182,7 +182,6 @@ main {
   border-radius: 25px;
   transition: 0.3s ease;
   overflow: hidden;
-  flex: 1 1 100%;
 }
 
 .filter i {
