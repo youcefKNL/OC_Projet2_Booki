@@ -1,14 +1,8 @@
-@font-face {
-  font-family: "Raleway";
-  src: url(../fonts/Raleway-Regular.ttf);
-}
-
-
 :root {
   --primary-color: #0065fc;
   --secondary-color: #deebff;
   --font-color: #f2f2f2;
-  --border-line:#d9d9d9;
+  --border-line: #d9d9d9;
   --font1: Raleway;
 }
 
@@ -95,7 +89,7 @@ nav ul li a:hover {
   font-weight: 400;
   line-height: 19px;
 }
-.header-containers  p:last-child {
+.header-containers p:last-child {
   font-size: 16px;
   font-weight: 400;
   margin: 30px 0;
@@ -170,12 +164,12 @@ nav ul li a:hover {
 .filter {
   height: 45px;
   margin-left: 20px;
+  padding: 0 20px;
   display: flex;
   align-items: center;
   justify-content: center;
   border: 2px solid var(--border-line);
   border-radius: 25px;
-  width: 15%;
   transition: 0.3s ease;
 }
 
@@ -344,7 +338,8 @@ nav ul li a:hover {
   display: flex;
   justify-content: left;
   align-items: center;
-  padding-left: 10px;
+  padding-left: 20px;
+  padding-bottom: 10px;
 }
 .bottom-containers img {
   object-fit: cover;
@@ -440,9 +435,7 @@ footer {
     flex-direction: column;
     gap: 50px;
   }
-  .filter {
-    width: 100%;
-  }
+
   #searchBar {
     font-size: 14px;
   }
@@ -473,7 +466,8 @@ footer {
 
   .card-bottom {
     width: 21%;
-    height:35vh;
+    /* height: 35vh; */
+    max-height: 300px;
   }
 
   .bottom-containers img {
@@ -487,7 +481,6 @@ footer {
 }
 /* ****************************BREAK POINT*************************** */
 @media screen and (max-width: 768px) {
-
   nav,
   .header-containers,
   #search-result,
@@ -506,6 +499,9 @@ footer {
   }
   .header-containers p {
     margin: 5% 0;
+  }
+  .header-containers {
+    margin: 40px 40px 0 40px;
   }
   header p {
     margin: 0 5% 10% 5%;
@@ -538,7 +534,7 @@ footer {
     width: 100%;
   }
 
-   /* **********Formulaire */
+  /* **********Formulaire */
 
   #buttonSearch {
     width: 15%;
@@ -559,11 +555,11 @@ footer {
     color: white;
     transform: translateX(-80%);
   }
-   /* **********Filtre */
+  /* **********Filtre */
 
   #filter-containers {
-    height: 25vh;
-    width: 100%;
+    height: 180px;
+    width: 95%;
     display: grid;
     grid-template-rows: 20% 50px 50px;
     grid-template-columns: 50% 50%;
@@ -571,7 +567,8 @@ footer {
       "Tit Tit"
       "eco fam"
       "rom ani";
-    gap: 10px;
+    gap: 5%;
+    padding-right: 0;
   }
   .filter {
     width: 100%;
@@ -595,7 +592,7 @@ footer {
     grid-area: ani;
   }
 
-   /* **********Main */
+  /* **********Main */
   .top {
     flex-direction: column-reverse;
   }
@@ -621,16 +618,19 @@ footer {
   #search-result a {
     display: none;
   }
+  #bottom {
+    padding: 0 40px;
+  }
   .bottom-containers {
     flex-direction: column;
   }
   .card-bottom {
     width: auto;
-    height: 20vh;
-    margin: 15px;
+    height: 200px;
+    margin: 15px 0;
   }
-  
-   /* **********footer */
+
+  /* **********footer */
 
   footer {
     flex-direction: column;
@@ -639,5 +639,6 @@ footer {
   }
   .footer {
     padding-bottom: 20px;
+    width: 100%;
   }
 }
