@@ -1,3 +1,5 @@
+/* **************************Variable************************* */
+
 :root {
   --primary-color: #0065fc;
   --secondary-color: #deebff;
@@ -14,10 +16,7 @@
   font-family: var(--font1);
   list-style: none;
 }
-body {
-  max-width: 1400px;
-  margin: 0 auto;
-}
+
 a {
   text-decoration: none;
 }
@@ -25,7 +24,11 @@ a:visited {
   color: inherit;
 }
 
-/* ******************************SECTION TOP************************** */
+/* ******************************HEADER************************* */
+header {
+  max-width: 1400px;
+  margin: 0 auto;
+}
 /* NavBar*************************** */
 
 nav {
@@ -73,6 +76,13 @@ nav ul li a:hover {
   color: var(--primary-color);
 }
 
+/* ******************************MAIN************************* */
+main {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+/* ******************************1er SECTION ************************** */
 /* SearchBar**************************** */
 
 .header-containers {
@@ -171,6 +181,8 @@ nav ul li a:hover {
   border: 2px solid var(--border-line);
   border-radius: 25px;
   transition: 0.3s ease;
+  overflow: hidden;
+  flex: 1 1 100%;
 }
 
 .filter i {
@@ -191,9 +203,10 @@ nav ul li a:hover {
 .filter p {
   font-size: 13px;
   font-weight: 900;
+  word-wrap: break-word;
 }
 
-/* ******************************SECTION TOP************************** */
+/* ******************************2e SECTION ************************** */
 /* 1er Bloc Gauche**************************** */
 .top {
   display: flex;
@@ -309,7 +322,7 @@ nav ul li a:hover {
   width: 40%;
 }
 
-/* ******************************SECTION 2************************** */
+/* ******************************3e SECTION ************************** */
 #bottom {
   margin: 40px 20px;
 }
@@ -350,6 +363,10 @@ nav ul li a:hover {
 /* ******************************FOOTER************************** */
 
 footer {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+.footer-container {
   display: flex;
   margin: 70px 20px 0 20px;
   padding: 70px 45px;
@@ -631,10 +648,10 @@ footer {
 
   /* **********footer */
 
-  footer {
+  .footer-container {
     flex-direction: column;
     padding: 40px 30px;
-    margin-top: 50px;
+    margin: 50px 0 0 0;
   }
   .footer {
     padding-bottom: 20px;
