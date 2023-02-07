@@ -91,7 +91,7 @@ main {
 .header-containers h1 {
   font-size: 22px;
   font-weight: 700;
-  line-height: 26px;
+  line-height: 40px;
 }
 .header-containers p {
   opacity: 0.5;
@@ -520,8 +520,11 @@ footer {
   p {
     margin: 5% 5%;
   }
+  .header-containers h1 {
+    line-height: 1;
+  }
   .header-containers p {
-    margin: 5% 0;
+    margin: 15px 0;
   }
   .header-containers {
     margin: 40px 40px 0 40px;
@@ -604,6 +607,7 @@ footer {
     flex-wrap: wrap;
     row-gap: 20px;
     column-gap: 3%;
+    padding: 0;
   }
   .filter {
     flex: 1 1 47%;
