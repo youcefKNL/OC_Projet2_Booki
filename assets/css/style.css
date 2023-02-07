@@ -228,7 +228,7 @@ main {
   padding: 0 0 23px 0;
   font-size: 18px;
 }
-#search-result a {
+a[title="displayMore"] {
   display: inline-block;
   margin: 50px 0 20px 10px;
 
@@ -308,8 +308,10 @@ main {
   justify-content: space-between;
   row-gap: 30px;
 }
-.results-right {
+.results-right a {
   display: flex;
+}
+.results-right {
   width: 100%;
 }
 .results-right-contains {
@@ -384,14 +386,14 @@ footer {
   font-weight: 700;
   padding-bottom: 20px;
 }
-.footer ul li {
+.footer a {
   font-size: 16px;
   font-weight: 400;
   line-height: 30px;
 }
 
-.footer ul li:hover {
-  cursor: pointer;
+.footer a:hover {
+  color: var(--primary-color);
 }
 
 /* *************************************************************************************** */
@@ -655,11 +657,14 @@ footer {
   .card-results {
     width: 100%;
   }
-  #search-result a {
+  a[title="displayMore"] {
     display: none;
   }
   #bottom {
     padding: 0 40px;
+  }
+  #bottom > h2 {
+    width: 30%;
   }
   .bottom-containers {
     flex-direction: column;
