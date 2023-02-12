@@ -318,8 +318,6 @@ a[title="displayMore"] {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-}
-.results-right-contains {
   padding-top: 10px;
 }
 .results-right-contains span {
